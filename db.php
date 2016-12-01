@@ -1,24 +1,26 @@
 <?php
 
-class Datebase{
+class Database{
 	
-	private $dbName = 'localhost';
-	private $dbHost = 'esolar07_guest_list';
-	private $dbUsername = 'esolar07_dbeddie';
-	private $dbUserPassword = 'kate3481';
-	private $db;
+	private static $dbHost = 'localhost';
+	private static $dbName = 'esolar07_babyshower';
+	private static $dbUsername = 'esolar07_dbeddie';
+	private static $dbUserPassword = 'kate3481';
+	private static $db;
 	
 	public static function connection(){
 		
 		try{
-			$this -> db = new PDO("mysql:host=$this->dbName;dbname=$this->dbname", $this->dbUsername, $this->dbUserPassword);
-			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+			self::$db = new PDO("mysql:host=".self::$dbHost.";"."dbname=".self::$dbName, self::$dbUsername, self::$dbUserPassword);
+			self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 		} catch(Exception $e){
 			echo $e->getMessage();
 			die();
 		}
-				
+		
+		return self::$db;
 	}
+	
 }
 
 
