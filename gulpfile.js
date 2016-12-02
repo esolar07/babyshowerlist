@@ -14,14 +14,14 @@ gulp.task('css', function () {
 	precss({}),
 	cssnext({browsers: ['last 1 version']})
   ];
-  return gulp.src('./*.css')
+  return gulp.src('./precss/*.css')
     .pipe(postcss(processors))
 	.pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
 	.pipe(rucksack())
-    .pipe(gulp.dest('./dest'));
+    .pipe(gulp.dest('./prod'));
 });
 
 gulp.task('images', () =>

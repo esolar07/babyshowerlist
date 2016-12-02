@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');
+
+:root {
+--pg-text-font: 'Raleway', sans-serif;
+--pg-header-font: 'Bungee', cursive;
+--pg-bg-color: white;
+--header-color: #5F9EA0;
+--footer-color: #1E90FF;
+}
+
+
+@custom-media --desktop-viewport (min-width: 30em);
+
+@custom-media --desktop-viewport-2 (min-width: 43em);
+
+@custom-media --desktop-viewport-3 (min-width: 51em);
