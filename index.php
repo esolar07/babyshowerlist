@@ -11,7 +11,7 @@
 		</fieldset>
 		<fieldset class="rsvp-form__set">
 			<label class="rsvp-form__label" for="guests">Guests</label>
-			<input class="rsvp-form__input" type="text" id="name" required>
+			<input class="rsvp-form__input" type="text" id="guests" required>
 		</fieldset>
 		<fieldset class="rsvp-form__set">
 			<input class="rsvp-form__btn" type="submit" value="RSVP">

@@ -16,10 +16,11 @@
 	$guestList = $guests -> fetchAll(PDO::FETCH_ASSOC);
 ?>
 
-<pre>
+<?php foreach($guestList as $guest){ ?>
+	<?php echo "<div>" . $guest["name"] . "</div>"; ?>
+	<?php echo "<div>" . $guest["total_guest"] . "</div>"; ?>
+							
+<?php } ?>
 
-	<?php var_dump($guestList); ?>
-
-</pre>
 
 <?php include ("inc/footer.php");?>
