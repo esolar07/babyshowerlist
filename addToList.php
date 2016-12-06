@@ -1,6 +1,4 @@
 <?php
-
-	require_once('db.php');
 	
 	if(!empty($_POST)){
 		
@@ -28,14 +26,22 @@
 		}
 		
 		if ($valid){
-			$pdo = Database::connection();
-			$pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+			require_once('db.php');
+			
 			$sqlCreateQuery = "INSERT INTO guest_list (name, total_guest) VALUES (?, ?)";
-			$creatQuery = $pdo -> prepare($sqlCreateQuery);
-			$creatQuery -> execute(array($name, $guests));
-			header("Location: http://eddiesolar.com/babyshower/");
+			
+			try{
+				$pdo = Database::connection();
+				$creatQuery = $pdo -> prepare($sqlCreateQuery);
+				$creatQuery->bindValue (1, $name, PDO::PARAM_STR);
+				$creatQuery->bindValue (2, $guests, PDO::PARAM_INT);
+				$creatQuery -> exec();
+				header("Location: http://eddiesolar.com/babyshower/");
+			} catch (Exception $e){
+				echo $e->getMessage();
+				die();
+			}	
 		}
-		
 	}
 	
 ?>

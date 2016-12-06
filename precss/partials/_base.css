@@ -4,7 +4,7 @@ html, body{
   padding: 0;
   width:100%;
   box-sizing:border-box;
-
+  font-family: var(--pg-text-font);
 }
 
 *, *:before, *:after{
@@ -12,7 +12,7 @@ html, body{
 }
 
 h1, h2, h3{
-	
+	font-family: var(--pg-header-font);
 }
 
 img{

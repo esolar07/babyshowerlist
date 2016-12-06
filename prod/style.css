@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');html, body {margin: 0;padding: 0;width: 100%;box-sizing: border-box
+@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');html, body {margin: 0;padding: 0;width: 100%;box-sizing: border-box;font-family: 'Raleway', sans-serif
 }*, *:before, *:after {box-sizing: border-box
-}h1, h2, h3 {}img {max-width: 100%;max-height: 100%
+}h1, h2, h3 {font-family: 'Bungee', cursive
+}img {max-width: 100%;max-height: 100%
 }li {list-style-type: none
 }a {color: black
 }a:link {text-decoration: none
@@ -8,4 +9,5 @@
 }a:hover {text-decoration: none
 }a:active {text-decoration: none
 }.l-main-container {width: 100%
+}.rsvp-form {margin-right: auto;margin-left: auto;width: 400px;border: 2px solid red
 }

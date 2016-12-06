@@ -15,7 +15,7 @@
         <meta name="description" content="Kate & Eddie's Baby Shower">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="prod/style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	</head>
     <body>
