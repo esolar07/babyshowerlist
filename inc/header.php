@@ -19,8 +19,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	</head>
     <body>
-		<header>
+		<header class="l-page-header">
 			<h1> <?php echo strtoupper($siteTitle); ?> </h1>
-			<h2> <?php echo ucwords($pageTitle); ?> </h2>
 		</header>
 		<main class="l-main-container">

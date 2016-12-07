@@ -3,9 +3,11 @@
 :root {
 --pg-text-font: 'Raleway', sans-serif;
 --pg-header-font: 'Bungee', cursive;
---pg-bg-color: white;
---header-color: #5F9EA0;
---footer-color: #1E90FF;
+--pg-bg-color: #6495ED;
+--pg-bg-color2: #4169E1;
+--header-color: #6495ED;
+--header-color2: #FFFFFF;
+--footer-color: #6495ED;
 }
 
 

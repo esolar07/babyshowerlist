@@ -1,4 +1,10 @@
 
+.l-page-header{
+	width: 100%;
+	text-align: center;
+	color: var(--header-color);
+}
+
 .l-main-container{
 	width: 100%;
 }
