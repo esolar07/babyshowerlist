@@ -22,8 +22,14 @@
 	margin-right: auto;
 	margin-left: auto;
 	width:300px;
+	border: 2px solid white;
+	border-radius: 10px;
 	&__person{
 		margin: 15px auto;
 		width: 90%;
+		&-name{
+			color: white;
+			font-weight:bold;
+		}
 	}
 }

@@ -15,6 +15,7 @@
 }.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%
 }.body-title {text-align: center;color: #FFFFFF
 }.rsvp-form {margin-right: auto;margin-left: auto;width: 400px
-}.guest-list {margin-right: auto;margin-left: auto;width: 300px
+}.guest-list {margin-right: auto;margin-left: auto;width: 300px;border: 2px solid white;border-radius: 10px
 }.guest-list__person {margin: 15px auto;width: 90%
+}.guest-list__person-name {color: white;font-weight: bold
 }
