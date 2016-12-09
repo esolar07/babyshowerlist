@@ -18,12 +18,36 @@
 	width: 400px;
 }
 
+.guest-info{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	width: 100%;
+	@media (--desktop-viewport) {
+		flex-direction:row;
+	}
+	&__box{
+		margin: 20px;
+		width: 50%;
+		text-align:center;
+		border-radius: 10px;
+		border: 3px solid white;
+		@media (--desktop-viewport) {
+				width: 100  / 3;
+		}
+		&--list{
+			text-align: left;
+		}
+	}
+	&__count{
+		font-size: 35px;
+	}
+}
+
 .guest-list{
 	margin-right: auto;
 	margin-left: auto;
 	width:300px;
-	border: 2px solid white;
-	border-radius: 10px;
 	&__person{
 		margin: 15px auto;
 		width: 90%;

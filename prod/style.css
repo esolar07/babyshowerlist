@@ -15,7 +15,15 @@
 }.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%
 }.body-title {text-align: center;color: #FFFFFF
 }.rsvp-form {margin-right: auto;margin-left: auto;width: 400px
-}.guest-list {margin-right: auto;margin-left: auto;width: 300px;border: 2px solid white;border-radius: 10px
+}.guest-info {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: center;justify-content: center;width: 100%
+}@media (min-width: 30em) {.guest-info {-ms-flex-direction: row;flex-direction: row
+    }
+}.guest-info__box {margin: 20px;width: 50%;text-align: center;border-radius: 10px;border: 3px solid white
+}@media (min-width: 30em) {.guest-info__box {width: 100  / 3
+    }
+}.guest-info__box--list {text-align: left
+}.guest-info__count {font-size: 35px
+}.guest-list {margin-right: auto;margin-left: auto;width: 300px
 }.guest-list__person {margin: 15px auto;width: 90%
 }.guest-list__person-name {color: white;font-weight: bold
 }
