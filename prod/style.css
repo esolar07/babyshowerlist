@@ -10,6 +10,9 @@
 }a:visited {text-decoration: none
 }a:hover {text-decoration: none
 }a:active {text-decoration: none
+}fieldset {border: 0 !important
+}input {outline: 0
+}input:focus {outline: 0
 }.l-page-header {width: 100%;text-align: center;color: #6495ED
 }.l-main-container {width: 100%
 }.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%
@@ -26,4 +29,8 @@
 }.guest-list {margin-right: auto;margin-left: auto;width: 300px
 }.guest-list__person {margin: 15px auto;width: 90%
 }.guest-list__person-name {color: white;font-weight: bold
+}.rsvp-form {position: relative;width: 350px;transform-style: preserve-3d;transition: 1s all;height: 75px
+}.rsvp-form__set {position: absolute;top: 0px;padding: 0;width: inherit;border: 4px solid white
+}.rsvp-form__set--2 {top: 20px
+}.rsvp-form__set--3 {top: 40px
 }
