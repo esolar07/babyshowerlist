@@ -31,6 +31,7 @@
 					<li class="guest-list__person">
 						<?php echo "<div> <span class='guest-list__person-name'>Name:</span> " . $guest["name"] . "</div>"; ?>
 						<?php echo "<div> Guests: " . $guest["total_guest"] . "</div>"; ?>
+						<button class="guest-list__delete"> <a <?php echo 'href="/delete.php?id=' . $guest['id'] . '"'; ?> > Delete Guest </a></button>
 					</li>					
 				<?php } ?>
 			</ul>
