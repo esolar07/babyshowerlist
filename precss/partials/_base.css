@@ -6,11 +6,7 @@ html, body{
   height: 100vh;
   box-sizing:border-box;
   font-family: var(--pg-text-font);
-  background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
-			  radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
-			  radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
-  background-size:110px 200px;
-  background-repeat:repeat-x;
+  background: linear-gradient(to right, var(--pg-bg-color) 0%, var(--pg-bg-color2) 50%,  var(--pg-bg-color) 100%);
 }
 
 *, *:before, *:after{

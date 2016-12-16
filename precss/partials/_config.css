@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Raleway');
+
 
 :root {
 --pg-text-font: 'Raleway', sans-serif;
---pg-header-font: 'Bungee', cursive;
+--pg-header-font: 'Amatic SC', cursive;
 --pg-bg-color: #6495ED;
 --pg-bg-color2: #4169E1;
 --header-color: #6495ED;
