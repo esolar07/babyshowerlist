@@ -12,10 +12,12 @@
 					<?php if (!empty($errorName)): ?>
 						<span class="rsvp__help"><?php echo $errorName;?></span>
 					<?php endif; ?>
+					<input type="submit" value="Next" class="rsvp-form__next" id="next--1">
 				</fieldset>
 				<fieldset class="rsvp-form__set rsvp-form__set--2">
 					<label class="rsvp-form__label" for="guests">Guests</label>
 					<input class="rsvp-form__input" type="text"  name="guests" id="guests" required>
+					<input type="submit" value="Next" class="rsvp-form__next" id="next--2">
 					<?php if (!empty($errorGuest)): ?>
 						<span class="rsvp__help"><?php echo $errorGuest;?></span>
 					<?php endif; ?>
