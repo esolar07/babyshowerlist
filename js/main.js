@@ -1,5 +1,5 @@
 (function(){
-	
+	console.log("Site is up");
 	//creating variables 
 	var form = document.querySelector("#js-form"),
 		name = document.querySelector("#name"),
@@ -12,21 +12,21 @@
 	next2.disabled = true;
 
 	function formIptCheck(ipt, btn, rot){
-		// grabs entered value from input field
-		var iptVal = ipt.value;
 		
 		ipt.addEventListener("input", function(){
-			if (iptVal == String && iptVal != null){
+			// grabs entered value from input field
+			var iptVal = ipt.value;
+		
+			if (typeof iptVal == "string" && typeof iptVal !== null){
 				console.log('passed');
-				ipt.style.backgroundColor = "green";
+				ipt.style.backgroundColor = "lightgreen";
 				btn.disabled = false;
-				ipt.addEventListener("click", function(){
+				btn.style.backgroundColor = "#4682B4";
+				btn.addEventListener("click", function(){
 					console.log("clicking");
 					form.style.transform  = "rotateX("+ rot +"deg)";
 				 })
-			}  else if(iptVal == null ){
-				ipt.style.backgroundColor = "white";
-			}
+			} 
 		})
 		
 		
@@ -34,4 +34,7 @@
 	
 	
 	formIptCheck(name, next1, 90);
+	
+	formIptCheck(guests, next2, 180);
+	
 }())

@@ -32,6 +32,7 @@
 						<?php echo "<div> <span class='guest-list__person-name'>Name:</span> " . $guest["name"] . "</div>"; ?>
 						<?php echo "<div> Guests: " . $guest["total_guest"] . "</div>"; ?>
 						<button class="guest-list__delete"> <a <?php echo 'href="/babyshower/delete.php?id=' . $guest['id'] . '"'; ?> > Delete Guest </a></button>
+						<button class="guest-list__edit"> <a <?php echo 'href="/babyshower/edit.php?id=' . $guest['id'] . '"'; ?> > Edit Guest </a></button>
 					</li>					
 				<?php } ?>
 			</ul>

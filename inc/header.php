@@ -20,6 +20,6 @@
 	</head>
     <body>
 		<header class="l-page-header">
-			<h1> <?php echo strtoupper($siteTitle); ?> </h1>
+			<h1 class="header-title"> <?php echo strtoupper($siteTitle); ?> </h1>
 		</header>
 		<main class="l-main-container">
