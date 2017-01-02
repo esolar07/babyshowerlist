@@ -1,19 +1,21 @@
 <?php
-
-	$id = 0;
-	if (!empty($_GET)){
+	require_once('db.php');
+	
+	if (!empty($_GET['id'])){
 		$id = $_REQUEST['id'];
     }
 	
 	if (!empty($_POST)){
-		$id = $_POST['id'];
-		$sql = "UPDATE guest_list SET name = ? WHERE id = ?";
-		require_once('db.php');
+		
+		$name = $_POST['name'];
+		$guests = $_POST['guests'];
+		
+		$sql = "UPDATE guest_list SET name = ?, total_guest = ? WHERE id = ?";
+		
 		try{
 			$pdo = Database::connection();
-			$deleteQuery = $pdo -> prepare($sql);
-			$deleteQuery -> bindParam(1,$id, PDO::PARAM_INT);
-			$deleteQuery -> execute();
+			$editQuery = $pdo -> prepare($sql);
+			$editQuery -> execute(array($name,$guests,$id));
 			header("Location: /babyshower/guests.php");
 		} catch(Exception $e){
 			echo $e->getMessage();
@@ -21,21 +23,21 @@
 		}
 		
 	} else{
-		$id = $_POST['id'];
+		// Get user from DB with ID and pute name and total_guest in variables for HTML input value
 		$sql = "SELECT * FROM guest_list WHERE id = ?";
-		require_once('db.php');
 		try{
 			$pdo = Database::connection();
 			$userInfoQuery = $pdo -> prepare($sql);
 			$userInfoQuery -> bindParam(1, $id, PDO::PARAM_INT);
 			$userInfoQuery -> execute();
-			$info = $userInfoQuery -> fetch(PDO::FETCH_ASSOC);
-			$name = $info['name'];
-			$guests = $info['guests'];
 		} catch(Exception $e){
 			echo $e->getMessage();
 			die();
-		} 
+		}
+		
+		$info = $userInfoQuery -> fetch(PDO::FETCH_ASSOC);
+		$name = $info['name'];
+		$guests = $info['total_guest'];
 	}
 	
 	$pageTitle = "edit";
@@ -47,17 +49,21 @@
 	
 	<h1 class="body-title">Are you sure you want to edit this guest.</h1>
 	
-	<form class="update-form" action="delete.php" method="post">
-	
-		<label class="update-form__label" for="name">Name</label>
-		<input type="hidden" name="name" value=" <?php echo $name; ?> " "/>
+	<form class="form update-form" action="edit.php?id= <?php echo $id;?> " method="post">
+		<fieldset class="update-form__set">
+			<label class="update-form__label" for="name">Name</label>
+			<input class="update-form__input" type="text" name="name" value=" <?php echo !empty($name)?$name:' '; ?> "/>
+		</fieldset>
 		
-		<label class="update-form__label" for="guests">Guests</label>
-		<input type="hidden" name="guests" value=" <?php echo $guests; ?> "/>
+		<fieldset class="update-form__set">
+			<label class="update-form__label" for="guests">Guests</label>
+			<input class="update-form__input" type="text" name="guests" value=" <?php echo !empty($guests)?$guests:' '; ?> "/>
+		</fieldset>
 		
-		<button type="submit" class="btn btn-update">Update</button>
-        <button class="btn btn-noupdate"><a class="btn" href="/babyshower/guests.php">Back</a><button>
-		
+		<fieldset class="update-form__set update-form__set--btns">
+			<button type="submit" class="btn btn-update">Update</button>
+			<button class="btn btn-noupdate"><a href="/babyshower/guests.php">Back</a></button>
+		</fieldset>
 	</form>
 	
 </div>

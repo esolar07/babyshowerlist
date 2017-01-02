@@ -15,7 +15,6 @@
 }.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%
 }.header-title {padding-top: 40px;font-size: 3em
 }.body-title {text-align: center;font-size: 2.4em;color: #FFFFFF
-}.rsvp-form {margin-right: auto;margin-left: auto;width: 400px
 }.guest-info {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: center;justify-content: center;margin-right: auto;margin-left: auto;width: 100%
 }@media (min-width: 43em) {.guest-info {-ms-flex-direction: row;flex-direction: row;width: 100% / 3
     }
@@ -27,7 +26,8 @@
 }.guest-list {margin-right: auto;margin-left: auto;width: 300px
 }.guest-list__person {margin: 15px auto;width: 90%
 }.guest-list__person-name {color: white;font-weight: bold
-}.rsvp-form {position: relative;width: 350px;transform-style: preserve-3d;transition: 1s all;height: 100px
+}.form {margin-right: auto;margin-left: auto;width: 350px
+}.rsvp-form {position: relative;transform-style: preserve-3d;transition: 1s all;height: 100px
 }.rsvp-form__set {display: -ms-flexbox;display: flex;position: absolute;top: 0px;padding: 0;width: inherit;border: 4px solid white;-webkit-backface-visibility: hidden;backface-visibility: hidden
 }.rsvp-form__set--1 {transform: rotateX(0deg)translateZ(36px)
 }.rsvp-form__set--2 {transform: rotateX(-90deg)translateZ(34px)
@@ -35,4 +35,8 @@
 }.rsvp-form__label {position: absolute;display: none
 }.rsvp-form__input {padding: 20px;width: 75%;height: 65px;font-size: 25px;background: rgba(225, 225, 225, .4);border: 0;transition: all 2s
 }.rsvp-form__next {width: 25%;height: 65px;font-size: 25px;border: 0
+}.update-form {height: 300px
+}.update-form__set {margin-right: auto;margin-left: auto;width: 300px;border: 0px
+}.update-form__label {width: 25%;height: 40px
+}.update-form__input {width: 75%;height: 40px;font-size: 20px;background: rgba(225, 225, 225, .4);border: 0
 }

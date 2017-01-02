@@ -29,6 +29,7 @@
 			<ul class="guest-list">
 				<?php foreach($guestList as $guest){ ?>
 					<li class="guest-list__person">
+						<?php echo "<div> ID: " . $guest["id"] . "</div>"; ?>
 						<?php echo "<div> <span class='guest-list__person-name'>Name:</span> " . $guest["name"] . "</div>"; ?>
 						<?php echo "<div> Guests: " . $guest["total_guest"] . "</div>"; ?>
 						<button class="guest-list__delete"> <a <?php echo 'href="/babyshower/delete.php?id=' . $guest['id'] . '"'; ?> > Delete Guest </a></button>
@@ -37,7 +38,6 @@
 				<?php } ?>
 			</ul>
 		</div>
-		<div class="guest-info__box"></div>
 	</div>
 </div>
 
