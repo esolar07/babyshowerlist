@@ -26,13 +26,11 @@
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	@media (--desktop-viewport-2) {
-		flex-direction:row;
-		width: 100% / 3;
-	}
 	&__box{
-		margin: 20px;
-		width: 50%;
+		margin-top: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 60%;
 		text-align:center;
 		border-radius: 10px;
 		border: 3px solid white;
@@ -72,9 +70,9 @@
 	position:relative;
 	transform-style: preserve-3d;
 	transition:1s all;
-	height:100px;
+	height:75px;
 	&__set{
-		display: flex;
+		display:flex;
 		position:absolute;
 		top:0px;
 		padding:0;
@@ -91,10 +89,6 @@
 			transform: rotateX(-180deg)translateZ(32px);
 		}
 	}
-	&__label{
-		position: absolute;
-		display: none;
-	}
 	&__input{
 		padding:20px;
 		width:75%;
@@ -108,7 +102,9 @@
 		width:25%;
 		height:65px;
 		font-size:25px;
+		text-align: center;
 		border: 0;
+		vertical-align:top;
 	}
 }
 

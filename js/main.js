@@ -13,9 +13,10 @@
 
 	function formIptCheck(ipt, btn, rot){
 		
+		// grabs entered value from input field
+		var iptVal = ipt.value;
+			
 		ipt.addEventListener("input", function(){
-			// grabs entered value from input field
-			var iptVal = ipt.value;
 		
 			if (typeof iptVal == "string" && typeof iptVal !== null){
 				console.log('passed');
