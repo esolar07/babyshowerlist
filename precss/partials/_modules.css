@@ -30,13 +30,10 @@
 		margin-top: 20px;
 		margin-right: auto;
 		margin-left: auto;
-		width: 60%;
+		width: 400px;
 		text-align:center;
 		border-radius: 10px;
 		border: 3px solid white;
-		@media (--desktop-viewport) {
-				width: 100  / 3;
-		}
 		&--list{
 			text-align: left;
 		}
@@ -49,14 +46,10 @@
 .guest-list{
 	margin-right: auto;
 	margin-left: auto;
-	width:300px;
 	&__person{
-		margin: 15px auto;
+		margin-top: 16px;
 		width: 90%;
-		&-name{
-			color: white;
-			font-weight:bold;
-		}
+		text-align: center;
 	}
 }
 
@@ -65,6 +58,11 @@
 	margin-left: auto;
 	width:350px;
 }
+
+.delete-form{
+	text-align:center;
+}
+
 
 .rsvp-form{
 	position:relative;
@@ -132,8 +130,34 @@
 
 
 
+.btn {
+	margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+	text-transform: capitalize;
+	a{
+		width: inherit;
+	}
+	&--delete{
+		background: var(--delete-btn-color);
+	}
+	&--edit{
+		background: var(--edit-btn-color);
+	}
+	&--no{
+		background: var(--no-btn-color);
+	}
+}
 
 
+.confirm-info{
+	marin-top:20px;
+	margin-right: auto;
+	margin-left: auto;
+	width:300px;
+}
 
 
 

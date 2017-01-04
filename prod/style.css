@@ -1,43 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Raleway');html, body {margin: 0;padding: 0;width: 100%;height: 100vh;box-sizing: border-box;font-family: 'Raleway', sans-serif;background: linear-gradient(to right, #6495ED 0%, #4169E1 50%,  #6495ED 100%)
-}*, *:before, *:after {box-sizing: border-box
-}h1, h2, h3 {font-family: 'Amatic SC', cursive
-}img {max-width: 100%;max-height: 100%
-}li {list-style-type: none
-}a {color: black
-}a:link {text-decoration: none
-}a:visited {text-decoration: none
-}a:hover {text-decoration: none
-}a:active {text-decoration: none
-}input {outline: 0
-}input:focus {outline: 0
-}::-webkit-input-placeholder {/* Chrome/Opera/Safari */color: white
-}::-moz-placeholder {/* Firefox 19+ */color: white
-}:-ms-input-placeholder {/* IE 10+ */color: white
-}:-moz-placeholder {/* Firefox 18- */color: white
-}.l-page-header {margin-top: -32px;width: 100%;height: 125px;text-align: center;color: #6495ED;background: #FFFFFF
-}.l-main-container {width: 100%
-}.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%
-}.header-title {padding-top: 40px;font-size: 3em
-}.body-title {text-align: center;font-size: 2.4em;color: #FFFFFF
-}.guest-info {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: center;justify-content: center;margin-right: auto;margin-left: auto;width: 100%
-}.guest-info__box {margin-top: 20px;margin-right: auto;margin-left: auto;width: 60%;text-align: center;border-radius: 10px;border: 3px solid white
-}@media (min-width: 30em) {.guest-info__box {width: 100  / 3
-    }
-}.guest-info__box--list {text-align: left
-}.guest-info__count {font-size: 35px
-}.guest-list {margin-right: auto;margin-left: auto;width: 300px
-}.guest-list__person {margin: 15px auto;width: 90%
-}.guest-list__person-name {color: white;font-weight: bold
-}.form {margin-right: auto;margin-left: auto;width: 350px
-}.rsvp-form {position: relative;transform-style: preserve-3d;transition: 1s all;height: 75px
-}.rsvp-form__set {display: -ms-flexbox;display: flex;position: absolute;top: 0px;padding: 0;width: inherit;border: 4px solid white;-webkit-backface-visibility: hidden;backface-visibility: hidden
-}.rsvp-form__set--1 {transform: rotateX(0deg)translateZ(36px)
-}.rsvp-form__set--2 {transform: rotateX(-90deg)translateZ(34px)
-}.rsvp-form__set--3 {transform: rotateX(-180deg)translateZ(32px)
-}.rsvp-form__input {padding: 20px;width: 75%;height: 65px;font-size: 25px;background: rgba(225, 225, 225, .4);border: 0;transition: all 2s
-}.rsvp-form__next {width: 25%;height: 65px;font-size: 25px;text-align: center;border: 0;vertical-align: top
-}.update-form {height: 300px
-}.update-form__set {margin-right: auto;margin-left: auto;width: 300px;border: 0px
-}.update-form__label {width: 25%;height: 40px
-}.update-form__input {width: 75%;height: 40px;font-size: 20px;background: rgba(225, 225, 225, .4);border: 0
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Raleway');html, body {margin: 0;padding: 0;width: 100%;height: 100vh;box-sizing: border-box;font-family: 'Raleway', sans-serif;background: linear-gradient(to right, #6495ED 0%, #4169E1 50%,  #6495ED 100%);
+}*, *:before, *:after {box-sizing: border-box;
+}h1, h2, h3 {font-family: 'Amatic SC', cursive;
+}img {max-width: 100%;max-height: 100%;
+}li {list-style-type: none;
+}a {color: black;
+}a:link {text-decoration: none;
+}a:visited {text-decoration: none;
+}a:hover {text-decoration: none;
+}a:active {text-decoration: none;
+}input {outline: 0;
+}input:focus {outline: 0;
+}::-webkit-input-placeholder {/* Chrome/Opera/Safari */color: white;
+}::-moz-placeholder {/* Firefox 19+ */color: white;
+}:-ms-input-placeholder {/* IE 10+ */color: white;
+}:-moz-placeholder {/* Firefox 18- */color: white;
+}.l-page-header {margin-top: -32px;width: 100%;height: 125px;text-align: center;color: #6495ED;background: #FFFFFF;
+}.l-comfirm {width: 100%;
+}.l-main-container {width: 100%;
+}.body-container {margin-right: auto;margin-left: auto;padding-top: 25px;width: 80%;
+}.header-title {padding-top: 40px;font-size: 3em;
+}.body-title {text-align: center;font-size: 2.4em;color: #FFFFFF;
+}.guest-info {display: -ms-flexbox;display: flex;-ms-flex-direction: column;flex-direction: column;-ms-flex-pack: center;justify-content: center;margin-right: auto;margin-left: auto;width: 100%;
+}.guest-info__box {margin-top: 20px;margin-right: auto;margin-left: auto;width: 400px;text-align: center;border-radius: 10px;border: 3px solid white;
+}.guest-info__box--list {text-align: left;
+}.guest-info__count {font-size: 35px;
+}.guest-list {margin-right: auto;margin-left: auto;
+}.guest-list__person {margin-top: 16px;width: 90%;text-align: center;
+}.form {margin-right: auto;margin-left: auto;width: 350px;
+}.delete-form {text-align: center;
+}.rsvp-form {position: relative;transform-style: preserve-3d;transition: 1s all;height: 75px;
+}.rsvp-form__set {display: -ms-flexbox;display: flex;position: absolute;top: 0px;padding: 0;width: inherit;border: 4px solid white;-webkit-backface-visibility: hidden;backface-visibility: hidden;
+}.rsvp-form__set--1 {transform: rotateX(0deg)translateZ(36px);
+}.rsvp-form__set--2 {transform: rotateX(-90deg)translateZ(34px);
+}.rsvp-form__set--3 {transform: rotateX(-180deg)translateZ(32px);
+}.rsvp-form__input {padding: 20px;width: 75%;height: 65px;font-size: 25px;background: rgba(225, 225, 225, .4);border: 0;transition: all 2s;
+}.rsvp-form__next {width: 25%;height: 65px;font-size: 25px;text-align: center;border: 0;vertical-align: top;
+}.update-form {height: 300px;
+}.update-form__set {margin-right: auto;margin-left: auto;width: 300px;border: 0px;
+}.update-form__label {width: 25%;height: 40px;
+}.update-form__input {width: 75%;height: 40px;font-size: 20px;background: rgba(225, 225, 225, .4);border: 0;
+}.btn {margin: 10px;padding: 10px;width: 100px;border: 2px solid white;border-radius: 5px;text-transform: capitalize;
+}.btn a {width: inherit;
+}.btn--delete {background: #CD5C5C;
+}.btn--edit {background: #008B8B;
+}.btn--no {background: #20B2AA;
+}.confirm-info {marin-top: 20px;margin-right: auto;margin-left: auto;width: 300px;
 }

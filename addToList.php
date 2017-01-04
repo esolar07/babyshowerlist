@@ -49,20 +49,21 @@
 	include ("inc/header.php");
 
 ?>
-<section class="l-comfirm">
-
-<h1> See you soon <?php echo $name; ?> </h1>
-<h3>Babyshower Information</h3>
-<ul>
-	<li> 
-		<p>Date: </p>
-	</li>
-	<li> 
-		<p>Time: </p>
-	</li>
-	<li> 
-		<p>Address: </p>
-	</li>
-</ul>
-</section>
+	<section class="l-comfirm">
+		<div class="confirm-info">
+			<h1> See you soon <?php echo $name; ?> </h1>
+			<h2>Babyshower Information</h2>
+			<ul>
+				<li> 
+					<p>Date: </p>
+				</li>
+				<li> 
+					<p>Time: </p>
+				</li>
+				<li> 
+					<p>Address: </p>
+				</li>
+			</ul>
+		</div>
+	</section>
 <?php include ("inc/footer.php");?>

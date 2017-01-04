@@ -61,8 +61,8 @@
 		</fieldset>
 		
 		<fieldset class="update-form__set update-form__set--btns">
-			<button type="submit" class="btn btn-update">Update</button>
-			<button class="btn btn-noupdate"><a href="/babyshower/guests.php">Back</a></button>
+			<button type="submit" class="btn btn--edit">Update</button>
+			<button class="btn btn--no"><a href="/babyshower/guests.php">Back</a></button>
 		</fieldset>
 	</form>
 	

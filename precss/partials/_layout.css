@@ -8,6 +8,10 @@
 	background: var(--header-color2);
 }
 
+.l-comfirm{
+	width: 100%;
+}
+
 .l-main-container{
 	width: 100%;
 }
