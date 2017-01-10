@@ -1,8 +1,26 @@
 <?php
-	$pageTitle = "rsvp";
-	include ("inc/header.php");
 
+	session_start();
+	
+	$pageTitle = "rsvp";
+	
+	include ("inc/header.php");
+	
 ?>
+	<?php if ($pageTitle == 'rsvp') { ?>
+			
+		<div class="admin-container">
+		
+			<?php if ($_SESSION['login'] == true) { ?>
+				<button class="btn btn--yes"><a href="/babyshower/guests.php">Admin</a></button>
+			<?php } else { ?>
+				<button class="btn btn--yes"><a href="/babyshower/login.php">Login</a></button>
+			<?php }; ?>
+		
+		</div>
+		
+	<?php }; ?>
+	
 	<div class="body-container">
 		<h2 class="body-title"> <?php echo ucwords($pageTitle); ?> </h2>
 		<form class="form rsvp-form"  id="js-form"  action="addToList.php" method="post">

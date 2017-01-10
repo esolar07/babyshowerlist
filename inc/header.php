@@ -1,8 +1,10 @@
 <?php
-
+	ob_start();
+	
 	$siteTitle = "kate & eddie's baby shower";
 	require_once('db.php');
 	$pdo = Database::connection();
+	
 
 ?>
 
@@ -19,7 +21,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	</head>
     <body>
+	
 		<header class="l-page-header">
-			<h1 class="header-title"> <?php echo strtoupper($siteTitle); ?> </h1>
+			<h1 class="header-title"> <?php echo strtoupper($siteTitle); ?> </h1>			
 		</header>
+		
 		<main class="l-main-container">
