@@ -23,7 +23,22 @@
     <body>
 	
 		<header class="l-page-header">
-			<h1 class="header-title"> <?php echo strtoupper($siteTitle); ?> </h1>			
+			<h1 class="header-title"><a href="/babyshower"> <?php echo strtoupper($siteTitle); ?> </a></h1>			
 		</header>
 		
 		<main class="l-main-container">
+			
+			<?php if ($pageTitle == 'rsvp') { ?>
+			
+				<div class="admin-container">
+				
+					<?php if ($_SESSION['login'] == true) { ?>
+						<button class="btn btn--yes"><a href="/babyshower/guests.php">Admin</a></button>
+						<button class="btn btn--delete"><a href="/babyshower">Log Out</a></button>
+					<?php } else { ?>
+						<button class="btn btn--yes"><a href="/babyshower/login.php">Login</a></button>
+					<?php }; ?>
+				
+				</div>
+				
+			<?php }; ?>

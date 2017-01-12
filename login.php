@@ -20,7 +20,6 @@
 
 	<div class="body-container">
 		<div class="admin-container">
-		<?php require_once('login.php'); ?>
 			<form class="login-form" action=" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> " method="post">
 				<label class="login-form__label" for="password">Admin</label>
 				<input class="login-form__input" type="text" name="password" />
