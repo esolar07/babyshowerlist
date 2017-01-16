@@ -28,17 +28,34 @@
 		
 		<main class="l-main-container">
 			
-			<?php if ($pageTitle == 'rsvp') { ?>
 			
-				<div class="admin-container">
+			<div class="admin-container">
+			
+				<?php if ($_SESSION['login'] == true) { ?>
 				
-					<?php if ($_SESSION['login'] == true) { ?>
-						<button class="btn btn--yes"><a href="/babyshower/guests.php">Admin</a></button>
-						<button class="btn btn--delete"><a href="/babyshower">Log Out</a></button>
-					<?php } else { ?>
-						<button class="btn btn--yes"><a href="/babyshower/login.php">Login</a></button>
-					<?php }; ?>
+					<?php if ($pageTitle == 'rsvp') { ?>
+					
+						<button class="btn btn--yes"><a href="/babyshower/guests.php">Admin</a></button>	
+						<button class="btn btn--delete"><a href="/babyshower/logout.php">Log Out</a></button>
+						
+					<?php } ?>
+					
+					<?php if ($pageTitle == 'guests') { ?>
+					
+						<button class="btn btn--delete"><a href="/babyshower/logout.php">Log Out</a></button>
+						
+					<?php } ?>
+					
+					
+				<?php } else { ?>
+						
+						<?php if ($pageTitle == 'rsvp') { ?>
+						
+							<button class="btn btn--yes"><a href="/babyshower/login.php">Login</a></button>
+						
+						<?php } ?>
+						
+				<?php }; ?>
+			
+			</div>
 				
-				</div>
-				
-			<?php }; ?>
