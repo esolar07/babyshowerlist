@@ -4,12 +4,11 @@
 :root {
 --pg-text-font: 'Raleway', sans-serif;
 --pg-header-font: 'Amatic SC', cursive;
---pg-bg-color: #6495ED;
---pg-bg-color2: #4169E1;
+--pg-bg-color: #FFF;
 --header-color: #6495ED;
---header-color2: #FFFFFF;
+--header-color2: #000000;
 --footer-color: #6495ED;
---input-bg: rgba(225,225,225,.4);
+--input-bg: rgba(0, 0, 0,.9);
 --input-bg-active: rgba(144,238,144,.4);
 --input-placeholder-color: white;
 --delete-btn-color: #CD5C5C;

@@ -53,15 +53,18 @@
 		<div class="confirm-info">
 			<h1> See you soon <?php echo $name; ?> </h1>
 			<h2>Babyshower Information</h2>
-			<ul>
+			<ul class="confirm-info__date"> 
 				<li> 
-					<p>Date: </p>
+					<p>Date: April 8, 2017</p>
 				</li>
 				<li> 
-					<p>Time: </p>
+					<p>Time: 1: 00 PM </p>
 				</li>
 				<li> 
-					<p>Address: </p>
+					<p>Location: C. B. Smith Park </p>
+				</li>
+				<li> 
+					<p>Address: 900 N Flamingo Rd, Pembroke Pines, FL 33028</p>
 				</li>
 			</ul>
 		</div>

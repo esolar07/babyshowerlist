@@ -25,7 +25,7 @@
 
 .body-title{
 	text-align:center;
-	font-size: 2.4em;
+	font-size: 3.4em;
 	color:var(--header-color2);
 }
 
@@ -125,7 +125,8 @@
 		width: 100%;
 		height: 65px;
 		font-size: 25px;
-		background: rgba(225, 225, 225, .4);
+		color: white;
+		background: rgba(0, 0, 0, .9);
 		border: 0;
 	}
 }
@@ -177,10 +178,17 @@
 
 
 .confirm-info{
-	marin-top:20px;
+	margin-top:30px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 20px 50px;
 	width:300px;
+    background: rgba(225,225,255, .8);
+	&__date{
+		padding-left: 0px;
+		width: 100%;
+		text-align: start;
+	}
 }
 
 
