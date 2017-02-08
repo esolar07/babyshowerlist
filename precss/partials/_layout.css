@@ -5,7 +5,7 @@
 	height: 125px;
 	text-align: center;
 	color: var(--header-color);
-	background: var(--header-color2);
+	background: var(--header-bg-color);
 }
 
 .l-comfirm{
